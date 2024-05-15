@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: ZeroG;
-    src: url('fonts/Zero-G\ Regular.otf') format('truetype');}
+    src: url('font/Zero-G\ Regular.otf') format('truetype');}
     
 /* GLOBALS*/
 *{
@@ -41,7 +41,7 @@ button{
 }
 
 /* LOADER*/
-/* #loader{
+#loader{
     height: 100%;
     width: 100%;
     position: fixed;
@@ -57,7 +57,7 @@ button{
 
 #loader h3{
     font-size: 2vw;
-} */
+}
 
 /* HOME - PAGE 1*/
 #page1{
@@ -125,12 +125,12 @@ nav{
 
 /*  hidden menu  */
     #menu-overlay{
+        position: absolute;
         display: flex;
         flex-direction: column;
-        position: absolute;
         width: 100%;
         height: 72vh;
-        padding: 2.5vw 2.8vw;
+        padding: 2.5vw 2vw;
         color: #000;
         background-color: #ff6038;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -156,6 +156,7 @@ nav{
     }
 
     #menu-cols{
+        position: relative;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -164,8 +165,8 @@ nav{
     #first-col{
         position: relative;
         width: 25%;
-        height: 27vw;
-        top: -8.5vw;
+        height: 23vw;
+        /* top: -8.5vw; */
     }
 
     #video{
@@ -188,13 +189,13 @@ nav{
         gap: .5vw;
         width: 48%;
         height: 40vw;
-        top: -4vw;
+        /* top: -6vw; */
     }
 
     .menu-link{
         display: flex;
         flex-direction: column;
-        font-size: 3.3vw;
+        font-size: 3vw;
         line-height: auto;
         height: 8%;
         overflow: hidden;
@@ -213,6 +214,8 @@ nav{
 
     .btn {
         position: relative;
+        display: flex;
+        align-items: center;
         width: max-content;
         margin: 1.2vw;
         padding: 1vw 1.8vw;
@@ -303,7 +306,7 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 8vw;
+    margin-top: 15vw;
     padding-inline: 5vw;
 }
 
@@ -391,7 +394,7 @@ nav{
     letter-spacing: -1.5vw;
 }
 
-.btn-seat {
+.btn-seat{
     position: relative;
     display: flex;
     align-items: center;
@@ -406,7 +409,6 @@ nav{
     overflow: hidden;
     top: 50%;
     z-index: 100;
-
 }
 
 .btn-seat a {
@@ -565,7 +567,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: fit-content;
+    height: 120vh;
 }
 
 #page6-text{
@@ -580,9 +582,9 @@ nav{
     color: #ff6038;
 }
 
+
 /* CAROUSSEL - GALLERY - PAGE 7 */
 #page7{
-    min-height: 100vh;
     margin-top: 15vw;
 }
 
@@ -608,7 +610,7 @@ nav{
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
 .swiper-slide {
     position: relative;
@@ -646,7 +648,7 @@ nav{
     height: 40vh;
 }
 
-.footer-btn {
+.footer-btn{
     position: relative; 
     width: max-content;
     margin: 1.2vw;
@@ -660,7 +662,7 @@ nav{
 
 }
 
-.footer-btn a {
+.footer-btn a{
     position: relative; 
     display: block;
     color: #fff;
@@ -731,28 +733,7 @@ nav{
 }
 
 
-
-/* 2040px */
-@media(max-width: 2040px){
-    /* Hidden menu*/
-    #menu-cols{
-        margin-top: 4vw;
-    }
-
-    /* MARS - PAGE 3 */
-}
-
-/* 1440px */
-@media(max-width: 1440px){
-    /* Hidden menu*/
-    #menu-cols{
-        margin-top: 5vw;
-    }
-
-    #first-col{
-        /* top: -1.5vw; */
-    }
-}
+/*---- BREAKPOINTS ----*/
 
 /* 900px */
 @media(max-width: 900px){
@@ -760,20 +741,26 @@ nav{
     #menu-overlay{
         height: 65vh;
     }
+
     #menu-logo{
         font-size: 3vw;
+        margin: 0;
     }
+
     #menu{
         font-size: 1.5vw;
     }
-    #menu-cols{
-        margin-top: 8vw;
-    }
 
+  
     #first-col{
-        top: -5vw;
-
+        width: 30%;
+        height: 32vw;
     }
+
+    #sec-col{
+        justify-content: center;
+    }
+
     .menu-link{
         height: 5.4vh;
     }
@@ -796,26 +783,40 @@ nav{
     }
 
 
+    /* MARS - PAGE 3 */
+    #video-bg-wrapper{
+        left: 28%;
+    }
+
+    #takeSeat h2{
+        font-size: 17vw;
+    }
+
+    #takeSeat #your{
+         top: 30vw;
+         z-index: 100;
+    }
+
+    .phobos{
+        top: -34.5%;
+        width: 6vw;
+    }
+
+    .deimos{
+        width: 6vw;
+    }
+
+
     /* 2 CARDS - PAGE 5 */
     #page5{
         height: 110vw;
         padding: 3vw;
     }
 
-    /* CAROUSSEL - GALLERY - PAGE 7 */
-    #page7{
-        min-height: 90vh;
-        margin-top: 15vw;
-    }
-    
-    #swiperdiv{
-        margin-top: -12vh;
-    }
 
     /* FOOTER */
     .footer-btn a{
         font-size: 1.9vw;
-
     }
     #footer-colums{
         font-size: 1.8vw;
@@ -826,35 +827,14 @@ nav{
 /* 768px */
 @media(max-width: 768px){
     /* Hidden menu*/
-    #menu-overlay{
-        height: 80vh;
-        padding: 4vw 6vw;
-    }
-    
-    #menu-logo{
-        font-size: 5vw;
-    }
-
     .menu-close-btn{
         font-size: 3.5vw;
     }
 
-    #menu-cols{
-        margin-top: 8vw;
+    .menu-link{
+        font-size: 3.5vw;
     }
 
-    #col{
-        width:fit-content;
-        margin-top: -6vw;
-        margin-bottom: 3vw;
-        margin-left: 15vw;
-    }
-
-
-    .menu-link a{
-        font-size: 4vw;
-        line-height: 5vw;
-    }
 
     /* MARS - PAGE 3 */
     #video-bg-wrapper{
@@ -866,89 +846,268 @@ nav{
     }
 
     #takeSeat #your{
-         top: 25vw;
-
+        top: 35vw;
+        z-index: 100;
     }
 
+
+    /* TEXT - PAGE 6 */
+    #page6{
+        height: 70vh;
+    }
 }
 
 /* 500px */
 @media(max-width: 500px){
     /* Hidden menu*/
     #menu-overlay{
-        padding: 4vw 6vw;
+        height: 50vh;
+        padding: 4.5vw 3.8vw;
     }
 
-    #menu-logo{
-        font-size: 6vw;
-
+    #first-col{
+        width: 35%;
+        height: 42vw;
+        top: -6.5vw;
     }
 
-    .menu-close-btn{
-        font-size: 3vw;
-    }
-
-    #menu-cols{
-        margin-top: 10vw;
-        align-items: center;
-        justify-content:center ;
-    }
-
-    #video{
-        display: none;
-    }
-    .menu-link a{
-        font-size: 8vw;
-        line-height: 8vw;
-    }
-
-    .btn{
-        padding: 1vw 2vw;
-        margin-top: 5vw;
+    .menu-link{
+        font-size: 5vw;
+        line-height: auto;
     }
 
     .btn a{
-        font-size: 4vw;
-    }
-
-    #menu-footer{
-        padding-inline: 5.8vw;
+        font-size: 3vw;
     }
 
     #menu-footer-copy{
-        font-size: 3vw;
-        margin-top: 2.3vw;
+        font-size: 2.5vw;
         margin-bottom: 1.3vw;
     }
 
     #socials a i{
         font-size: 3vw;
     }
+
+
+    /* HOME - PAGE 1*/
+    #menu{
+        font-size: 2.5vw;
+    }
+
+
+    /* TEXT - PAGE 2 */
+    .elem h1{
+        font-size: 5.2vw;
+        line-height: 8vw;
+    }
+
+
+    /* MARS - PAGE 3 */
+    #video-bg-wrapper{
+        left: 36%;
+    }
+
+    #takeSeat{
+        top: -0.5vw;
+    }
+
+    #takeSeat h2{
+        font-size: 25vw;
+    }
+
+    #takeSeat #your{
+        left: .5vw;
+        z-index: 100;
+    }
+
+    .btn-seat a{
+        font-size: 9vw;
+    }
+
+    .phobos{
+        left: 68%;
+        width: 10vw;
+    }
+
+    .deimos{
+        left: 68%;
+        width: 10vw;
+    }
+
+
+    /* 2 CARDS - PAGE 5 */
+    #page5{
+        margin-top: 15vw;
+
+    }
+    #page5-top h4{
+        font-size: 3vw;
+    }
+
+    #page5-top h4 span{
+        font-size: 2.2vw;
+    }
+
+    #page5-top h4 i{
+        font-size: 3vw;
+    }
+
+    #page5-top h2{
+        font-size: 6vw;
+    }
+
+    #page5-elements{
+        flex-direction: column;
+        gap: 15vw;
+    }
+
+    #page5-elements .box{
+        width: 60%;
+    }
+
+
+    /* TEXT - PAGE 6 */
+    #page6{
+        margin-top: 60vw;
+        margin-bottom: 30vw;
+    }
+
+
+    /* FOOTER */
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+    }
+
+    #footer-top{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10vw;
+    }
+    .footer-btn{
+        margin-top: 3vw;
+    }
+    .footer-btn a{
+        font-size: 3.5vw;
+    }
+
+    #footer-colums{
+        font-size: 3vw;
+        margin-bottom: 20vw;
+    }
 }
 
 
 /* 390px */
 @media(max-width: 390px){
+    /* Hidden menu*/
+    #menu-overlay{
+        height: 70vh;
+    }
 
+    .menu-close-btn{
+        font-size: 4vw;
+    }
+
+    #menu-cols{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #first-col{
+        width: 90%;
+        height: 20vw;
+        top: -4.5vw;
+    }
+
+    #sec-col{
+        align-items: center;
+        order: -1;
+        width: 80%;
+        height: 55vw;
+        margin-top: 5vw;
+    }
+
+    #menu-footer-copy{
+        font-size: 2.9vw;
+    }
+
+    .menu-link{
+        font-size: 6vw;
+    }
+
+    #video{
+        margin-top: 10vw;
+    }
+
+    .btn{
+        margin-top: 5vw;
+        padding: 2vw 1.8vw;
+    }
+
+    .btn a{
+        font-size: 3.5vw;
+    }
+
+
+    /* HOME - PAGE 1*/
+    nav{
+        padding: 6vw 3vw;
+    }
+    
+    #menu{
+    font-size: 3vw;
+    }
+
+    
+    /* MARS - PAGE 3 */
+    #takeSeat{
+        top: 10vw;
+    }
+
+    .phobos{
+        left: 80%;
+        width: 12vw;
+    }
+
+    .deimos{
+        left: 80%;
+        width: 12vw;
+    }
+
+
+    /* FOOTER */
+    #footer-colums{
+        font-size: 4vw;
+    }
 }
 
-
-/* 375px */
-@media(max-width: 375px){
-
-}
 
 /* 320px */
 @media(max-width: 320px){
     /* Hidden menu*/
-       nav{
-           padding: 6vw;
-       }
-   
-       #menu{
-           font-size: 8vw;
-       }
-   
+    #menu-overlay{
+        height: 55vh;
+    }
+
+    
     /* HOME - PAGE 1*/
-   
-   }
+    nav{
+        padding: 6vw;
+    }
+
+
+    /* TEXT - PAGE 6 */
+    #page6{
+        margin-top: 90vw;
+    }
+
+
+    /* FOOTER */
+    #footer-colums{
+        font-size: 4.5vw;
+    }
+}

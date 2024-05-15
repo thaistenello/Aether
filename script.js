@@ -28,14 +28,13 @@ function menuOverlay(){
     document.addEventListener("DOMContentLoaded",function(){
         let tl = gsap.timeline({ paused: true });
     
-        tl.to("#menu-overlay", {
+        tl.to("#menu-overlay",{
             duration: 1,
             clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%",
             ease: "power1.out",
         });
     
-        tl.from(".menu-link, .btn",
-            {
+        tl.from(".menu-link, .btn",{
                 opacity: 0,
                 y: 60,
                 stagger: 0.05,
@@ -44,8 +43,7 @@ function menuOverlay(){
             },
         );
     
-        tl.to("#video-preview",
-            {
+        tl.to("#video-preview",{
                 duration: 1,
                 height: "200px",
                 ease: "power2.out",
@@ -53,8 +51,7 @@ function menuOverlay(){
         "<",
         );
     
-        tl.to(".menu-divider",
-            {
+        tl.to(".menu-divider",{
                 duration: 2,
                 width: "100%",
                 ease: "power4.out",
@@ -78,7 +75,6 @@ function menuOverlay(){
     });
     
 }menuOverlay()
-
 
 //PAGE 1 / HOME - GSAP cursor ball effect 
 function cursorEffect(){
@@ -189,7 +185,7 @@ function page6Animation(){
 
 //PAGE 7 / CAROUSSEL- GALLERY - SWIPER animation
 function gallery(){
-    var swiper = new Swiper(".swiper", {
+    const swiper = new Swiper(".swiper", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -199,8 +195,43 @@ function gallery(){
         speed: 10000,
         slidesPerView: 4,
         initialSlide: 2,
-        loop: true,
+        loop: true,  
+        
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1.5,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 40
+            },
+            // when window width is >= 900px
+            900: {
+              slidesPerView: 3.5,
+              spaceBetween: 40
+            },
+            // when window width is >= 1000px
+            1000: {
+              slidesPerView: 4,
+              spaceBetween: 40
+            }
+          }
     });
+
+
+
+
+
+
+
 }gallery()
 
 //FOOTER EATHER - GSAP text animation
@@ -227,4 +258,41 @@ function footer(){
         }
     })
 }footer()
+
+//LOADER
+function loader(){
+    var tl = gsap.timeline()
+
+    tl.from("#loader h3", {
+        x: 30,
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        delay: 0.5
+    });
+    
+    tl.to("#loader h3", {
+        x: -30,
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        delay: 0.5
+    });
+    
+    tl.to("#loader", {
+        opacity: 0,
+        y: "-100%"
+    });
+    
+    tl.from("#page1-content h1 span", {
+        y: 300,
+        opacity: 0,
+        stagger: 0.1,
+        delay: -0.5
+    });
+
+    tl.to("#loader",{
+        display: "none"
+    })
+}loader()
 
