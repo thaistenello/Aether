@@ -70,7 +70,7 @@ button{
     background-color: #ff6038;
     border-radius: 50%;
     position: fixed;
-    z-index: 9;
+    z-index: 20;
 }
 
 #page1 video{
