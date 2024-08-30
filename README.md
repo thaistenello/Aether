@@ -2,26 +2,30 @@
 AETHER
 </h1>
 
-<h3 align="center"><a href="#aether-english">Show English version</a></h3>
+<!-- TOGGLE VERSION -->
+<h3 align="center"><a href="#aether-english">
+    <img src="https://github.com/user-attachments/assets/9081fcec-55ad-4b1a-8b6b-28fec4be9863">
+</a></h3>
 
+<!-- GIF/IMAGE PREVIEW -->
 ![home-preview-gif](https://github.com/thaistenello/Aether/assets/131812228/30cc2ae5-6542-41d3-951d-eb60acbb0200)
 
-
+<!-- VERCEL BUTTON -->
 <a href="https://aether-roan.vercel.app/" target="_blank">
-    <img src="https://placehold.jp/ffffff/350x50.png?text=Visualize%20a%20Demonstra%C3%A7%C3%A3o&css=%7B%22border-radius%22%3A%2215px%22%2C%22background%22%3A%22%20-webkit-gradient(linear%2C%20left%20top%2C%20left%20bottom%2C%20from(%23dd5538)%2C%20to(%23eb5f5c))%22%7D">
+    <img src="https://github.com/user-attachments/assets/62f196a2-b30d-4e69-9768-76611a69581c">
 </a>
 
 <h2>Sobre o projeto</h2>
-
+<br/>
 <p>
   Você já viu um por do sol azul?<br> 
   Agora isso será possível.<br> 
   Conheça Aether a primeira companhia de turismo espacial, que te leva ao planeta vermelho, Marte.<br>
-  Junte-se a nós.
-
+  
   Aether é um site com design inspirado no criativo site da empresa de marketing <a href="https://www.rejouice.com/">Rejouice</a>. Incorporando elementos de animação, mas mantendo sua originalidade e uma personalidade distintiva.
 </p>
-
+<br/>
+<br/>
 <p>Aqui estão algumas características principais:</p>
 
 <ul>
@@ -65,20 +69,27 @@ Todo conteúdo de mídia utilizado provem de bancos gratuítos ou foram gerados 
 <h2>Licença</h2>
 <p>Este projeto é distribuído sob a licença MIT, para mais informações acesse o arquivo <a href="https://github.com/thaistenello/Etherea/blob/main/License">License </a>.</p>
 
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<!-- ........................................................... -->
+<!-- English version -->
 <h1 align="center" id="aether-english">
 AETHER
 </h1>
 
-<h3 align="center"><a href="#aether-portuguese">Show Portuguese version</a></h3>
+<!-- TOGGLE VERSION -->
+<h3 align="center"><a href="#aether-portuguese">
+    <img src="https://github.com/user-attachments/assets/2e21c106-bfa6-4e3e-9fdf-7cc811f4a811">
+</a></h3>
 
+<!-- GIF/IMAGE PREVIEW -->
 ![home-preview-gif](https://github.com/thaistenello/Aether/assets/131812228/30cc2ae5-6542-41d3-951d-eb60acbb0200)
 
+<!-- VERCEL BUTTON -->
 <a href="https://aether-roan.vercel.app/" target="_blank">
-    <img src="https://placehold.jp/ffffff/300x50.png?text=View%20the%20Demo&css=%7B%22border-radius%22%3A%2215px%22%2C%22background%22%3A%22%20-webkit-gradient(linear%2C%20left%20top%2C%20left%20bottom%2C%20from(%23dd5538)%2C%20to(%23eb5f5c))%22%7D">
+    <img src="https://github.com/user-attachments/assets/3a56aa3c-7ddd-40be-a51d-378fc6b04d91">
 </a>
 
 <h2>About the Project</h2>
