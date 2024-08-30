@@ -22,7 +22,7 @@ AETHER
   Agora isso será possível.<br> 
   Conheça Aether a primeira companhia de turismo espacial, que te leva ao planeta vermelho, Marte.<br>
   
-  Aether é um site com design inspirado no criativo site da empresa de marketing <a href="https://www.rejouice.com/">Rejouice</a>. Incorporando elementos de animação, mas mantendo sua originalidade e uma personalidade distintiva.
+  Aether é um site com design inspirado no criativo site da empresa de marketing <a href="https://www.rejouice.com/">Rejouice</a>. Incorporando elementos de animação, mas mantendo sua originalidade e uma personalidade.
 </p>
 <br/>
 <br/>
@@ -100,7 +100,7 @@ AETHER
   Meet Aether, the first space tourism company, taking you to the red planet, Mars.<br>
   Join us.
 
-  Aether is a website with design inspired by the creative website of the marketing company <a href="https://www.rejouice.com/">Rejouice</a>. Incorporating animation elements, but maintaining its originality and distinctive personality.
+  Aether is a website with design inspired by the creative website of the marketing company <a href="https://www.rejouice.com/">Rejouice</a>. Incorporating animation elements, but maintaining its originality and personality.
 </p>
 
 <p>Here are some key features:</p>
